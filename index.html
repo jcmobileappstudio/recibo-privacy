@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Privacy Policy</title>
+    <style>
+        :root {
+            --accent: #00B5A5;
+            --accent-soft: rgba(0, 181, 165, 0.08);
+            --text: #1a1a1a;
+            --muted: #5a5a5a;
+            --bg: #ffffff;
+            --card: #f7f9fa;
+            --border: rgba(0, 0, 0, 0.08);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #f0f0f0;
+                --muted: #aaaaaa;
+                --bg: #0a0a0a;
+                --card: #161616;
+                --border: rgba(255, 255, 255, 0.08);
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 96px;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            letter-spacing: 0.02em;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 15px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 40px 0 12px;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 8px;
+        }
+        p {
+            margin: 0 0 14px;
+            color: var(--text);
+        }
+        .summary {
+            background: var(--accent-soft);
+            border-left: 4px solid var(--accent);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 24px 0 8px;
+        }
+        .summary p {
+            margin: 0;
+        }
+        .summary strong {
+            color: var(--accent);
+        }
+        ul {
+            margin: 8px 0 18px;
+            padding-left: 22px;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1px 6px;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+            font-size: 13px;
+        }
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">PRIVACY POLICY</span>
+            <h1>Recibo Privacy Policy</h1>
+            <p class="subtitle">Effective May 9, 2026 &middot; Last updated May 9, 2026</p>
+        </header>
+
+        <section class="summary">
+            <p>
+                <strong>Short version.</strong> Recibo runs entirely on your iPhone. We do not collect, sell, or share your data. Your receipts stay on your device unless you turn on iCloud sync, in which case they are synced through your own personal iCloud account. We have no servers, no analytics, no advertising, and no third-party trackers.
+            </p>
+        </section>
+
+        <h2>Who we are</h2>
+        <p>
+            Recibo is an iOS app for scanning, organizing, and exporting receipts. It is published by JCM App Studio. If you have any questions about this policy or your data, contact us at <a href="mailto:jcmappstudio@gmail.com">jcmappstudio@gmail.com</a>.
+        </p>
+
+        <h2>What information Recibo handles</h2>
+
+        <h3>Receipt content (on-device only)</h3>
+        <p>
+            When you scan or import a receipt, Recibo uses Apple's on-device Vision OCR and (when available) Apple Intelligence Foundation Models to read the image and extract fields like vendor, date, total, tax, and line items. The image and parsed text are stored locally in the app's SwiftData database and, when iCloud sync is enabled, in your private iCloud database.
+        </p>
+        <p>
+            Recibo never sends receipt images, OCR text, or any parsed content to JCM App Studio or to any third party. The OCR and AI parsing run on your device.
+        </p>
+
+        <h3>iCloud sync (optional)</h3>
+        <p>
+            iCloud sync is OFF by default. When you turn it on in Settings, Recibo stores your receipts in the private CloudKit database tied to your personal iCloud account. We have no access to that database. Apple's iCloud terms apply: see <a href="https://www.apple.com/legal/internet-services/icloud/" rel="noopener">apple.com/legal/internet-services/icloud</a>. Disabling sync stops new uploads. Receipts already in iCloud remain there until you remove them yourself in iOS Settings or by deleting the app.
+        </p>
+
+        <h3>Location (opt-in)</h3>
+        <p>
+            If you enable "Capture location on scan" in Settings, Recibo records the GPS coordinate where each receipt was scanned. Location data is stored on your device only and used solely for the in-app receipt map. It is never transmitted off your device by Recibo.
+        </p>
+
+        <h3>App preferences (UserDefaults)</h3>
+        <p>
+            Recibo uses Apple's standard <code>UserDefaults</code> system to remember your settings, scan quota counts, redeemed beta codes, and developer-only diagnostic flags. This data is local to your device and is not shared with us or with any third party. It is declared in our App Store privacy manifest under category <code>NSPrivacyAccessedAPICategoryUserDefaults</code> with reason code <code>CA92.1</code>.
+        </p>
+
+        <h3>Microphone and Speech Recognition (opt-in)</h3>
+        <p>
+            When you tap the voice-note microphone on the receipt confirm screen, Recibo uses Apple's on-device Speech Recognition to transcribe what you say into the notes field. Audio and transcripts stay on your device. We do not record, store, or transmit audio.
+        </p>
+
+        <h3>Camera and Photos (permission-gated)</h3>
+        <p>
+            The camera permission is used to scan receipts. The Photos permission is used to import receipt images you choose, and to save exported PDFs back to your library when you ask for that. Recibo never browses your library on its own.
+        </p>
+
+        <h2>What information we do NOT collect</h2>
+        <ul>
+            <li>No accounts. Recibo does not require sign-in.</li>
+            <li>No analytics. We do not run Google Analytics, Firebase, Mixpanel, Segment, or any equivalent.</li>
+            <li>No advertising identifiers. We do not access the Identifier for Advertisers (IDFA) and do not show ads.</li>
+            <li>No third-party SDKs that send data off-device.</li>
+            <li>No crash logs sent to us. Apple may collect anonymous crash and performance data per your iOS Settings; that goes to Apple, not to JCM App Studio.</li>
+        </ul>
+
+        <h2>In-app purchases</h2>
+        <p>
+            Pro subscriptions and beta-code redemptions are handled by Apple's StoreKit framework. Apple, not JCM App Studio, processes payments and sees billing information. Apple shares an anonymous receipt with the app that confirms entitlement only. See <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a> for how Apple handles transaction data.
+        </p>
+
+        <h2>Children's privacy</h2>
+        <p>
+            Recibo is not directed at children under 13, and we do not knowingly collect personal information from anyone, including children. If you believe a child has provided personal information through Recibo, contact us and we will delete it from any local backups we may control.
+        </p>
+
+        <h2>Your rights</h2>
+        <p>
+            Because Recibo does not collect personal data, there is nothing for us to export, delete, or amend on your behalf. To delete your local data, you can delete the app from your device. To delete data synced to iCloud, you can disable iCloud sync in Recibo and then delete the Recibo app data through iOS Settings &rarr; Apple ID &rarr; iCloud &rarr; Manage Storage. Residents of jurisdictions like the EU (GDPR), United Kingdom, and California (CCPA/CPRA) have rights regarding their personal information; since Recibo collects none from you, those rights are inherently satisfied.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+            Receipt data is stored using Apple's standard SwiftData and CloudKit security models, including device encryption when your device is locked with a passcode. We rely on Apple's platform security; we do not and cannot bypass it.
+        </p>
+
+        <h2>International users</h2>
+        <p>
+            Recibo is distributed through Apple's App Store globally. Local data stays on your device wherever you are. iCloud-synced data is governed by Apple's regional data-storage policies, not by us.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+            If this policy changes, we will update the "Last updated" date above and post the new version at the same URL. Material changes will be communicated through an in-app notice or via TestFlight release notes during the beta.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            JCM App Studio<br>
+            Email: <a href="mailto:jcmappstudio@gmail.com">jcmappstudio@gmail.com</a>
+        </p>
+
+        <footer>
+            &copy; 2026 JCM App Studio. Recibo is a product of JCM App Studio.
+        </footer>
+    </div>
+</body>
+</html>
